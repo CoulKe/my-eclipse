@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #3a3af1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: sky 15000ms linear;
+          animation: sky 15000ms linear;
+}
+
+.eclipse {
+  height: 150px;
+  width: 150px;
+  background-color: #ffff55;
+  -webkit-box-shadow: 0px 0px 35px 19px #f8f8a5;
+          box-shadow: 0px 0px 35px 19px #f8f8a5;
+  border-radius: 50%;
+  -webkit-animation: 4000ms sun;
+          animation: 4000ms sun;
+}
+
+.eclipse::before {
+  content: '';
+  background-color: #000;
+  border-radius: 50%;
+  height: 158px;
+  width: 150px;
+  position: absolute;
+  -webkit-animation: 20000ms moon linear;
+          animation: 20000ms moon linear;
+}
+
+.eclipse-text {
+  text-shadow: 2px, 2px white;
+  font-family: sans-serif;
+  margin: 2.5rem;
+  color: white;
+  font-weight: 700;
+  -webkit-animation: name 25000ms;
+          animation: name 25000ms;
+  opacity: 0;
+}
+
+@-webkit-keyframes sky {
+  0% {
+    background-color: #3a3af1;
+  }
+  60%, 70% {
+    background-color: #111111;
+  }
+  100% {
+    background-color: #3a3af1;
+  }
+}
+
+@keyframes sky {
+  0% {
+    background-color: #3a3af1;
+  }
+  60%, 70% {
+    background-color: #111111;
+  }
+  100% {
+    background-color: #3a3af1;
+  }
+}
+
+@-webkit-keyframes moon {
+  0% {
+    background-color: #000;
+    -webkit-transform: translate(-120vw);
+            transform: translate(-120vw);
+  }
+  40%, 49% {
+    background-color: #000;
+    -webkit-transform: translate(0.2vw);
+            transform: translate(0.2vw);
+  }
+  100% {
+    background-color: #000;
+    -webkit-transform: translate(120vh);
+            transform: translate(120vh);
+  }
+}
+
+@keyframes moon {
+  0% {
+    background-color: #000;
+    -webkit-transform: translate(-120vw);
+            transform: translate(-120vw);
+  }
+  40%, 49% {
+    background-color: #000;
+    -webkit-transform: translate(0.2vw);
+            transform: translate(0.2vw);
+  }
+  100% {
+    background-color: #000;
+    -webkit-transform: translate(120vh);
+            transform: translate(120vh);
+  }
+}
+
+@-webkit-keyframes name {
+  0%, 30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  47% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes name {
+  0%, 30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  47% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=index.css.map */

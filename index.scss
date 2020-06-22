@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(58, 58, 241);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  animation: sky 15000ms linear;
+}
+.eclipse {
+  height: 150px;
+  width: 150px;
+  background-color: #ffff55;
+  box-shadow: 0px 0px 35px 19px rgb(248, 248, 165);
+  border-radius: 50%;
+  animation: 4000ms sun;
+}
+.eclipse::before{
+    content: '';
+    background-color: #000;
+    border-radius: 50%;
+    height: 158px;
+    width: 150px;
+    position: absolute;
+    animation: 20000ms moon linear;
+
+}
+.eclipse-text{
+    text-shadow: 2px, 2px white;
+    font-family: sans-serif;
+    margin: 2.5rem;
+    color: white;
+    font-weight: 700;
+    animation: name 25000ms;
+    opacity: 0;
+}
+@keyframes sky{
+    0%{
+        background-color: rgb(58, 58, 241);
+    }
+    60%, 70%{
+        background-color: #111111;
+    }
+    100%{
+        background-color: rgb(58, 58, 241);;
+    }
+}
+
+@keyframes moon {
+    0%{
+        background-color: #000;
+        transform: translate(-120vw);
+        
+    }
+    40%,49%{
+        background-color: #000;
+        transform: translate(0.2vw);
+    }
+    100%{
+        background-color: #000;
+        transform: translate(120vh);
+    }
+}
+@keyframes name{
+    0%,30%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    47%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
