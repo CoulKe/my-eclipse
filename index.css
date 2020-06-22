@@ -45,8 +45,8 @@ body {
   width: 150px;
   position: absolute;
   -webkit-animation: 20000ms moon linear;
-animation-fill-mode: forwards;
           animation: 20000ms moon linear;
+animation-fill-mode: forwards;
 }
 
 .eclipse-text {
