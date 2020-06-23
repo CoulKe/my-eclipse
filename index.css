@@ -99,6 +99,7 @@ animation-fill-mode: forwards;
     background-color: #000;
     -webkit-transform: translate(120vh);
             transform: translate(120vh);
+
   }
 }
 
@@ -117,6 +118,7 @@ animation-fill-mode: forwards;
     background-color: #000;
     -webkit-transform: translate(120vh);
             transform: translate(120vh);
+opacity: 0;
   }
 }
 
