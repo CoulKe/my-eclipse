@@ -24,6 +24,7 @@ body {
           align-items: center;
   -webkit-animation: sky 15000ms linear;
           animation: sky 15000ms linear;
+overflow: hidden;
 }
 
 .eclipse {
@@ -118,7 +119,6 @@ animation-fill-mode: forwards;
     background-color: #000;
     -webkit-transform: translate(120vh);
             transform: translate(120vh);
-overflow: hidden;
   }
 }
 
